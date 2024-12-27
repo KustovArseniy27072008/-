@@ -1,0 +1,13 @@
+def f(a):
+    b = 10 ** 2
+    c = int(a * b)
+    d = a * b - c
+    if d >= 0.5:
+        c += 1
+    return c / b
+def m(r, h):
+    m = 1000 * h * ((r**2)*3.14)
+    m = f(m)
+    return m
+
+print (m(1,5))

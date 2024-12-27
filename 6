@@ -1,0 +1,33 @@
+def f(a):
+    b = ''
+    c = ''
+    for i in range (0,2):
+        b += a[i]
+    for i in range(3, 5):
+        c += a[i]
+    b = int(b)
+    if b > 12:
+        b = b - 12
+    else:
+        b = b
+    r = str(b) + ':' + str(c)
+    return r
+def f(a, d):
+    b = ''
+    c = ''
+    for i in range (0,2):
+        b += a[i]
+    for i in range(3, 5):
+        c += a[i]
+    if d:
+        b = int(b) +12
+    r = str(b) + ':' + str(c)
+    return r
+
+def m(l, g, d = None):
+    if g == '12':
+        r = f(l, d)
+    elif g == '24':
+        r = f(l)
+    return r
+print(m('10:01', '24', d = False))

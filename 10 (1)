@@ -1,0 +1,7 @@
+def f(a):
+    if (len(a)) % 3 == 0:
+        return True
+    else:
+        return False
+
+print(f([1, 2, 3, 4, 5]))

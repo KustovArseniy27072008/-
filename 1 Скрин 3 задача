@@ -1,0 +1,7 @@
+def to_list(*a):
+    b =[]
+    for a in a:
+        b.append(a)
+    return b
+
+print(to_list(1,2,3,4))

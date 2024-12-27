@@ -1,0 +1,13 @@
+def shortener(st):
+    a = False
+    b = ''
+    for i in st:
+        if i == '(':
+            a = True
+        elif i == ')':
+            a = False
+        elif not a:
+            b += i
+    return b.strip()
+
+print(shortener('QWERTY(тебе не надоело это писать?)'))

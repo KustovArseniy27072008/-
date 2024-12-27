@@ -1,0 +1,14 @@
+i = {
+        '1':'Q',
+        '2':'W',
+        '3':'E',
+        '4':'R',
+        '5':'T',
+        }
+def f(a):
+    b = list(a.keys())
+    a[b[0]], a[b[-1]] = a[b[-1]], a[b[0]]
+    del a[b[1]]
+    a['new key'] = 'new value'
+    return a
+print (f(i))

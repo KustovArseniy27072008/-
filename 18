@@ -1,0 +1,14 @@
+def f(a):
+    a.lower()
+    b = ''
+    for i in a:
+        print(i)
+        if i == "е":
+            b += "3"
+        elif i == "а":
+            b += "4"
+        else:
+            b += i
+    return b
+
+print(f('губами? аргумент'))

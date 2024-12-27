@@ -1,0 +1,27 @@
+def top3(st):
+    st = st.lower()
+    a = {}
+    for i in st:
+        if i == ' ':
+            i = ''
+    for i in st:
+        a[i] = 0
+    for i in st:
+        a[i] += 1
+    b = {}
+    for i in range(3):
+        c = -1
+        d = None
+        for j in a:
+            if int(a[j]) > int(c):
+                c = a[j]
+                d = j
+        b[d] = c
+        a[d] = 0
+    g = ''
+    for ii,jj in b.items():
+        g += f"{ii} - {jj}\n"
+
+    h = "3 наиболее частых символа:\n" + g
+    return h
+print(top3('aaaaaaaa,bbbbbasdfggggggggggg'))

@@ -1,0 +1,13 @@
+def first_last(letter,st):
+    a = None
+    b = None
+    c = []
+    st = st.lower()
+    for i in range (len(st)):
+        if st[i] == letter:
+            c.append(i)
+    if c != []:
+        a = c[0]
+        b = c[-1]
+    return a,b
+print(c('a','aasdwDFER'))

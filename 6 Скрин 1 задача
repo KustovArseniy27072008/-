@@ -1,0 +1,7 @@
+def to_dict(lst):
+    a = {}
+    for i in lst:
+        a[i] = i
+    return a
+
+print(to_dict(['ЙЦУКЕН','НЕКУЦЙ']))

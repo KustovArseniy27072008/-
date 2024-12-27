@@ -1,0 +1,10 @@
+def f(a):
+    b = a[0]
+    for i in range(1, len(a)):
+        if b > a[i]:
+            return 'Не возраставет'
+        else:
+            b = a[i]
+    return 'Возрастает'
+
+print(f([1, 2, 4, 3]))

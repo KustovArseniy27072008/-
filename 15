@@ -1,0 +1,17 @@
+def f(a):
+    b = ''
+    c = []
+    d = 1
+    for i in range(len(a)):
+        if a[i]!=',':
+            b += a[i]
+        elif a[i] == ' ':
+            b += 0
+        else:
+            c.append(int(b))
+            b = ''
+    for i in c:
+        d *= i
+    return d
+
+print(f('1, 2, 3, 4'))

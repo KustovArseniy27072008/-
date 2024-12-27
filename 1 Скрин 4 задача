@@ -1,0 +1,9 @@
+def useless (s):
+    a = s [0]
+    for i in (0,len(s)-1):
+        if a < s[i]:
+            a = s[i]
+    a = a / len(s)
+    return a
+
+print(useless([1,10,100,1000]))

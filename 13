@@ -1,0 +1,20 @@
+def f(a):
+    b = ''
+    for i in a:
+        if i != ' ':
+            b += ''
+        else:
+           break
+    for i in range(len(a)-1):
+        if a[i] == a[i+1] and a[i] == ' ':
+            b += ''
+        else:
+            b += a[i]
+    for i in range(len(a)-1, -1, -1 ):
+        if a[i] != ' ':
+            break
+        else:
+            b += ''
+    return b
+
+print(f"#{f('QWERTY       QWERTY  ')}#")

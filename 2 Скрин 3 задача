@@ -1,0 +1,12 @@
+def mul_to_int (a,b):
+    c = a * b
+    if (c//1)>=c:
+        return(int(c))
+    else:
+        return(float(c))
+
+l = 1,1
+m =  2
+d = 1
+print(mul_to_int(l,m))  
+print(mul_to_int(d,m)) 

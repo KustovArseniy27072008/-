@@ -1,0 +1,13 @@
+def f(m):
+    l = 10 ** 5
+    i = int(m * b)
+    g = m * l - i
+    if g >= 0.5:
+        i += 1
+    return i / l
+
+def avg_5(a,b,c,d):
+    h = (a + b + c + d) / 4
+    return f(h)
+
+print(avg_5(1,2,3,4))

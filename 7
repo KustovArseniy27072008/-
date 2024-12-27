@@ -1,0 +1,10 @@
+def f(a):
+    b = 'abcdefghijklmnopqrstuvwxyz'
+    sum = 0
+    for i in a:
+        for j in range (len(b)):
+            if i == b[j]:
+                sum += j+1
+    return sum
+
+print(f('qwerty'))

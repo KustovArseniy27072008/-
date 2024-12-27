@@ -1,0 +1,22 @@
+def f(a):
+    b = 0
+    c = False
+    d = False
+    e = False
+    g = False
+    h = False
+    for i in a:
+        if not i.isalpha() and not i.isdigit():
+            c = True
+        if i.isupper():
+            d = True
+        if i.islower():
+            g = True
+        if i.isdigit():
+            h = True
+    if len(a) >= 16:
+        length = True
+    b = c + d + e + g + h
+    return f"Оценка: {b}/5"
+
+print(f('qwerty136FHr'))

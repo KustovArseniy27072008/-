@@ -1,0 +1,19 @@
+import random
+
+def f(p1, p2):
+    if p1 == p2:
+        return "Ничья"
+    elif (p1 == "камень" and p2 == "ножницы") or \
+         (p1 == "ножницы" and p2 == "бумага") or \
+         (p1 == "бумага" and p2 == "камень"):
+        return "Победил 1 игрок"
+    else:
+        return "Победил 2 игрок"
+
+a = ["камень", "ножницы", "бумага"]
+p1 = random.choice(a)
+p2 = random.choice(a)
+
+print("Игрок 1 выбрал:", p1)
+print("Игрок 2 выбрал:", p2)
+print(f(p1, p2))

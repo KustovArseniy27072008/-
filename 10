@@ -1,0 +1,10 @@
+def f(x,y):
+    if len(x) != len(y):
+        print('Неравное количество точек')
+        return
+    a = []
+    for i in range (len(x)):
+        a.append(f"({x[i]};{y[i]})")
+    return a
+
+print(f([1,2,3,4], [10,100,1000,100000]))

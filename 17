@@ -1,0 +1,16 @@
+import math
+def f(a):
+    b = 10 ** 3
+    c = int(a * b)
+    d = a * b - c
+    if d >= 0.5:
+        c += 1
+    return c / b
+def m(l):
+    x = l.get('x')[0] - l.get('x')[1]
+    y = l.get('y')[0] - l.get('y')[1]
+    h = math.sqrt(x**2 + y**2)
+    h = f(h)
+    return h
+
+print(m({'x':[1,2],'y':[1,10]}))

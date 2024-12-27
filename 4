@@ -1,0 +1,29 @@
+def f(a):
+    b = ''
+    c = ''
+    d = 0
+    for i in range(0,len(a)):
+        if not a[i].isdigit() and not a[i+1].isdigit():
+            b += ''
+        else:
+            b += a[i]
+
+    for i in b:
+        if i.isdigit():
+            c += i
+        else:
+            c += '_'
+    n = ''
+    m = []
+    for i in m:
+        if i != '_':
+            n += i
+        else:
+            m.append(n)
+            n = ''
+    m.append(n)
+    for i in m:
+        d += int(i)
+    return d
+
+print(f('fgsfg3fgsdte5'))

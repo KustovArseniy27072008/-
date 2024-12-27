@@ -1,0 +1,18 @@
+def camel(st):
+    a = 0
+    b = ''
+    for i in st:
+        if i.isalpha():
+            if a == 0:
+                i = i.upper()
+                b += i
+                a = 1
+            elif a == 1:
+                i = i.lower()
+                b += i
+                a = 0
+        else:
+            b += i
+    return b
+
+print(camel("sdfhyehdbchr"))

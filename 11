@@ -1,0 +1,6 @@
+def f(a):
+    for i in a:
+        print (f"Hello {i}")
+a = ['Q', 'W', 'E']
+
+print(f(a))

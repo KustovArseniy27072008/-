@@ -1,0 +1,12 @@
+def biggest_dict(*a):
+    b = {'first_one':'we can do it'}
+    c = {}
+    for i in a:
+        d = i.split(':',1)
+        l = d[0]
+        m = d[1]
+        c[l] = m
+    b.update(c)
+    return b
+
+print(biggest_dict('ЙЦУКЕН:1', 'НЕКУЦЙ:10'))

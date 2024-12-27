@@ -1,0 +1,8 @@
+def f(a,b):
+    c = []
+    for i in b:
+        if i not in b:
+            c.append(a)
+    return c
+
+print(del_enem(['Q','W','E'], ['Q', 'W']))
